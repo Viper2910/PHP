@@ -30,4 +30,17 @@
         $bank_balance += $money;    //Stworzenie petli warunkowej
     }
     echo "Nowy stan konta to: $bank_balance . <br>";   //Wyswietlenie wartosci zmiennej bank_balance po petli warunkowej.
+
+    for ($fuel = 50 ; $fuel >= 0 ; $fuel--)  //Stworzenie petli for do zmniejszania wartosci zmiennej fuel od 100 do 0.
+    {
+        echo "$fuel <br>"; //Wyswietlanie wartosci zmiennej fuel
+        if ($fuel <= 20 && $fuel > 0){ //Stworzenie petli if do prawdzenie czy wartosc zmiennej fuel jest mniejsza lub rowna 20 ale wieksza od 0 i wyswietlenie komunikatu jesli tak.
+            echo "Low fuel lvl! <br>";
+        }
+
+        elseif ($fuel == 0) { //Stworzenie kolejnego warunku sprawdzajacego czy wartosc zmiennej fuel jest rowny 0.
+            echo "You have no fuel :(";
+        }
+    }
+
 ?>
