@@ -17,4 +17,9 @@
                 array('o', 'o', 'x'),
                 array('x', 'o', ' '));  //Stworzenie tablicy dwuwymarowej
     echo $oxo[1][2];
+
+    echo "<br>"; //Wyswietlenie pustej linii 
+
+    $msg = 5;   //Stworzenie zmiennej 'wiadomosci'
+    echo "Masz " . $msg . " wiadomosci.";   //Wyswietlenie liczby wiadomosci poprzez polaczenie elementow.
 ?>
