@@ -2,4 +2,8 @@
     $mycounter = 1; //zmienna numeryczna
     $mystring = "Hej!"; //zmienna tekstowa
     $myarray = array("Jeden", "Dwa", "Trzy"); //zmienna tablicowa
+
+    $username = "Jan Kowalski";
+
+    echo $username;
 ?>
