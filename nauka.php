@@ -10,4 +10,11 @@
 
     $team = array('Jan', 'Andrzej', 'Kamil', 'Ola', 'Ania'); // Stworzenie tablicy ze zmiennymi typu string 
     echo $team[3];  //Wyswietlenie 4 elementu tablicy
+
+    echo "<br>"; //Wyswietlenie pustej linii 
+
+    $oxo = array(array('x', ' ', 'o'),
+                array('o', 'o', 'x'),
+                array('x', 'o', ' '));  //Stworzenie tablicy dwuwymarowej
+    echo $oxo[1][2];
 ?>
