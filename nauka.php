@@ -21,5 +21,13 @@
     echo "<br>"; //Wyswietlenie pustej linii 
 
     $msg = 5;   //Stworzenie zmiennej 'wiadomosci'
-    echo "Masz " . $msg . " wiadomosci.";   //Wyswietlenie liczby wiadomosci poprzez polaczenie elementow.
+    echo "Masz " . $msg . " wiadomosci. <br>";   //Wyswietlenie liczby wiadomosci poprzez polaczenie elementow.
+
+    $bank_balance = 0;  //Stworzenie zmiennej bank_balnce
+    echo "Stank konta to: $bank_balance . <br>"; //Wyswietlenie zmiennej bank_balance
+    if($bank_balance < 100){
+        $money = 1000;
+        $bank_balance += $money;    //Stworzenie petli warunkowej
+    }
+    echo "Nowy stan konta to: $bank_balance . <br>";   //Wyswietlenie wartosci zmiennej bank_balance po petli warunkowej.
 ?>
