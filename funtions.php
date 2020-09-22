@@ -1,4 +1,8 @@
 <?php
+$name_a = "WILHELM";    //Zadeklarowanie zmiennych
+$name_b = "dorota";
+$name_c = "tadeUSZ";
+
 
 echo fix_names ("WILIAM", "tomasz", "domiNIK"); //Wyswietlenie wynikow dziala funkcji fix_names
 
@@ -21,6 +25,18 @@ function change_names_letters($name_1, $name_2, $name_3){   //Zdefiniowanie funk
     $name_3 = ucfirst(strtolower($name_3));
 
     return array($name_1, $name_2, $name_3);    //Zwrocenie wartosci zmienionych stringow poprzez tablice.
+}
+
+echo "<br>";
+
+echo $name_a . " " . $name_b . " " . $name_c . "<br>";  //Wyswietlenie zmiennych przed modyfikacja
+fix_new_names();    //Odpalenie funkcji
+echo $name_a . " " . $name_b . " " . $name_c . "<br>";  //Wyswietlenie zmodyfikowanych stringow
+
+function fix_new_names(){   //Zdefiniowanie funkcji ze zmiennymi globalnymi
+    global $name_a; $name_a = ucfirst(strtolower($name_a));
+    global $name_b; $name_b = ucfirst(strtolower($name_b));
+    global $name_c; $name_c = ucfirst(strtolower($name_c));
 }
 
 ?>
