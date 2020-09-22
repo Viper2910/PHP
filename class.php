@@ -19,12 +19,18 @@ $object_2->name = "Anduin";
 echo "Object 1 name = " . $object_1->name . "<br>";
 echo "Object 2 name = " . $object_2->name . "<br>";
 
+echo $object->get_password(); //Wyswietlenie hasle biezacego obiektu.
+echo "<br>";
 
 class User{ //Deklarowanie klasy.
     public $name, $password;
     
     function save_user(){ //Deklarowanie metody klasy.
         echo "Miejsce na kod funkcji <br>";
+    }
+
+    function get_password(){ //Deklarowanie metody do odczytania hasla biezacego obiektu.
+        return $this->password;
     }
 }
 
