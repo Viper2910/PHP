@@ -23,4 +23,9 @@ foreach($p2 as $item => $description){ //Wyswitlenie elementow listy asocjacyjne
     echo "$item : $description <br>";
 }
 
+$p1_count = count($p1); //Sprawdzenie ilosci elementow w tablicy.
+$p2_count = count($p2);
+echo "Tablica p1 ma : $p1_count elementow <br>";
+echo "Tablica p2 ma : $p2_count elementow <br>";
+
 ?>
